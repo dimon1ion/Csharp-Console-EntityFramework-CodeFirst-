@@ -14,6 +14,6 @@ namespace _07_11_2021_Entity_Framework_Core_CodeFirst.Classes
         [Required]
         [MaxLength(150)]
         public string Name { get; set; }
-        public ICollection<Participants> Participants { get; set; }
+        public virtual ICollection<Participants> Participants { get; set; } = new List<Participants>();
     }
 }

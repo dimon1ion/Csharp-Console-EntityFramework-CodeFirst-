@@ -12,7 +12,7 @@ namespace _07_11_2021_Entity_Framework_Core_CodeFirst.Classes
         public int Id { get; set; }
 
         [Required]
-        public int PartId { get; set; }
+        public int ParticipantId { get; set; }
 
         [Required]
         public int SportId { get; set; }
@@ -20,8 +20,8 @@ namespace _07_11_2021_Entity_Framework_Core_CodeFirst.Classes
         [Required]
         public int MedalsId { get; set; }
 
-        public Participants Participant { get; set; }
-        public Sports Sport { get; set; }
-        public Medals Medal { get; set; }
+        public virtual Participants Participant { get; set; }
+        public virtual Sports Sport { get; set; }
+        public virtual Medals Medal { get; set; }
     }
 }

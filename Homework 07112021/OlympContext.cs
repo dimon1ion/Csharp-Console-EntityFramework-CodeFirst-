@@ -15,7 +15,7 @@ namespace _07_11_2021_Entity_Framework_Core_CodeFirst.Contexts
         public DbSet<ParticipantsSportsMedals> ParticipantsSportsMedals { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Olymp;Integrated Security=true;");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Olymp;Integrated Security=true;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

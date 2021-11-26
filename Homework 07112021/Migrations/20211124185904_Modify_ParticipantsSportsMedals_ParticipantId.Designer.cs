@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using _07_11_2021_Entity_Framework_Core_CodeFirst.Contexts;
 
 namespace Homework_07112021.Migrations
 {
     [DbContext(typeof(OlympContext))]
-    partial class OlympContextModelSnapshot : ModelSnapshot
+    [Migration("20211124185904_Modify_ParticipantsSportsMedals_ParticipantId")]
+    partial class Modify_ParticipantsSportsMedals_ParticipantId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

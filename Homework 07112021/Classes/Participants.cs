@@ -22,7 +22,7 @@ namespace _07_11_2021_Entity_Framework_Core_CodeFirst.Classes
         [Required]
         public int CountryId { get; set; }
 
-        public Country Country { get; set; }
-        public ICollection<ParticipantsSportsMedals> ParticipantsSportsMedals { get; set; }
+        public virtual Country Country { get; set; }
+        public virtual ICollection<ParticipantsSportsMedals> ParticipantsSportsMedals { get; set; } = new List<ParticipantsSportsMedals>();
     }
 }
